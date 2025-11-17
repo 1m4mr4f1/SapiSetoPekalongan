@@ -1,0 +1,67 @@
+---
+// src/components/Partner.astro
+---
+
+<section id="partner" class="py-20 bg-white relative overflow-hidden">
+  
+  <div class="absolute bottom-0 left-0 opacity-10 pointer-events-none">
+     <svg width="150" height="150" fill="none" viewBox="0 0 200 200">
+        <defs>
+           <pattern id="dot-pattern-partner" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="2" cy="2" r="2" class="text-[#E65100]" fill="currentColor" />
+           </pattern>
+        </defs>
+        <rect width="200" height="200" fill="url(#dot-pattern-partner)" />
+     </svg>
+  </div>
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    
+    <h2 class="text-[#E65100] font-bold text-lg md:text-xl uppercase tracking-wider mb-3">
+      Partner Kepercayaan Kami
+    </h2>
+    <p class="text-gray-500 text-base md:text-lg max-w-2xl mx-auto mb-16">
+      Kami bangga dapat menyuplai daging berkualitas terbaik untuk membantu bisnis kuliner berikut ini berkembang pesat.
+    </p>
+
+    <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 grayscale hover:grayscale-0 transition-all duration-500">
+      
+      <div class="group cursor-pointer transform hover:scale-110 transition duration-300">
+        <span class="font-extrabold text-3xl text-red-600 tracking-tight" style="font-family: sans-serif;">
+          BAKSO<span class="text-gray-800">BANGMAIL</span>
+        </span>
+      </div>
+
+      <div class="group cursor-pointer transform hover:scale-110 transition duration-300">
+        <div class="border-2 border-green-700 px-2 py-1">
+             <span class="font-serif font-bold text-xl text-green-800 uppercase tracking-widest">
+              Sejagad
+            </span>
+        </div>
+        <span class="text-[10px] font-serif text-green-700 tracking-widest uppercase block mt-1">Rumah Makan</span>
+      </div>
+
+      <div class="group cursor-pointer transform hover:scale-110 transition duration-300">
+        <span class="font-mono font-black text-2xl text-gray-900 tracking-tighter border-b-4 border-gray-900">
+          STEAK<span class="text-[#E65100]">88</span>
+        </span>
+      </div>
+
+      <div class="group cursor-pointer transform hover:scale-110 transition duration-300">
+        <span class="font-serif italic font-semibold text-3xl text-purple-600">
+          Dapur Bu Ani
+        </span>
+      </div>
+
+      <div class="group cursor-pointer transform hover:scale-110 transition duration-300">
+        <span class="font-black text-3xl text-orange-500 -rotate-3 inline-block shadow-sm" style="text-shadow: 2px 2px 0px rgba(0,0,0,0.1);">
+          BURGER<br/><span class="text-xl text-yellow-500">LUBER!</span>
+        </span>
+      </div>
+
+    </div>
+
+    <div class="mt-20 border-t border-gray-100 w-full"></div>
+
+  </div>
+</section>

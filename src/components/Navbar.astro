@@ -1,0 +1,37 @@
+---
+// src/components/Navbar.astro
+---
+
+<nav class="fixed w-full z-50 bg-white border-b border-[#E65100]">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      
+      <div class="flex-shrink-0 flex items-center gap-3">
+        <div class="w-10 h-10 bg-[#E65100] rounded-full flex items-center justify-center text-white font-bold shadow-sm">
+            S
+        </div>
+        <span class="font-bold text-2xl tracking-tight text-gray-900">Sapi<span class="text-[#E65100]">Seto</span></span>
+      </div>
+
+      <div class="hidden md:flex space-x-8">
+        <a href="#hero" class="text-gray-600 hover:text-[#E65100] font-medium transition duration-300">Beranda</a>
+        <a href="#product" class="text-gray-600 hover:text-[#E65100] font-medium transition duration-300">Produk</a>
+        <a href="#location" class="text-gray-600 hover:text-[#E65100] font-medium transition duration-300">Lokasi</a> 
+        <a href="#partner" class="text-gray-600 hover:text-[#E65100] font-medium transition duration-300">Partner</a>
+        <a href="#footer" class="text-gray-600 hover:text-[#E65100] font-medium transition duration-300">Kontak</a>
+      </div>
+
+      <div class="flex items-center space-x-5">
+        <button class="text-gray-500 hover:text-[#E65100] transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </button>
+        <a href="https://wa.me/62812345678" class="bg-[#E65100] hover:bg-[#cc4600] text-white px-6 py-2.5 rounded text-sm font-semibold shadow-md hover:shadow-lg transition duration-300 uppercase tracking-wide">
+          Hubungi Kami
+        </a>
+      </div>
+
+    </div>
+  </div>
+</nav>
