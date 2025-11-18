@@ -6,7 +6,6 @@
   <div class="max-w-7xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8">
     <div class="flex justify-between items-center h-20 sm:h-24 md:h-28">
 
-      <!-- Logo Section -->
       <div class="flex-shrink-0 flex items-center gap-3 sm:gap-4 md:gap-4 animate-fade-in-left">
         <div class="w-12 sm:w-14 md:w-16 h-12 sm:h-14 md:h-16 bg-[#E65100] rounded-full flex items-center justify-center text-white font-bold text-lg sm:text-xl md:text-2xl shadow-sm hover:scale-110 transition duration-300 animate-scale-in">
             S
@@ -16,31 +15,33 @@
         </span>
       </div>
 
-      <!-- Desktop Menu -->
       <div class="hidden md:flex space-x-4 lg:space-x-8">
-        <a href="#hero" class="text-gray-600 hover:text-[#E65100] font-medium text-sm lg:text-base transition duration-300 relative group animate-stagger-1">
+        <a href="#hero" class="nav-link text-gray-600 hover:text-[#E65100] font-medium text-sm lg:text-base transition duration-300 relative group animate-stagger-1">
           Beranda
-          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E65100] group-hover:w-full transition-all duration-300"></span>
+          <span class="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-[#E65100] group-hover:w-full transition-all duration-300"></span>
         </a>
-        <a href="#product" class="text-gray-600 hover:text-[#E65100] font-medium text-sm lg:text-base transition duration-300 relative group animate-stagger-2">
+
+        <a href="#product" class="nav-link text-gray-600 hover:text-[#E65100] font-medium text-sm lg:text-base transition duration-300 relative group animate-stagger-2">
           Produk
-          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E65100] group-hover:w-full transition-all duration-300"></span>
+          <span class="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-[#E65100] group-hover:w-full transition-all duration-300"></span>
         </a>
-        <a href="#location" class="text-gray-600 hover:text-[#E65100] font-medium text-sm lg:text-base transition duration-300 relative group animate-stagger-3">
-          Lokasi
-          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E65100] group-hover:w-full transition-all duration-300"></span>
-        </a>
-        <a href="#partner" class="text-gray-600 hover:text-[#E65100] font-medium text-sm lg:text-base transition duration-300 relative group animate-stagger-4">
+
+        <a href="#partner" class="nav-link text-gray-600 hover:text-[#E65100] font-medium text-sm lg:text-base transition duration-300 relative group animate-stagger-3">
           Partner
-          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E65100] group-hover:w-full transition-all duration-300"></span>
+          <span class="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-[#E65100] group-hover:w-full transition-all duration-300"></span>
         </a>
-        <a href="#footer" class="text-gray-600 hover:text-[#E65100] font-medium text-sm lg:text-base transition duration-300 relative group animate-stagger-5">
+
+        <a href="#location" class="nav-link text-gray-600 hover:text-[#E65100] font-medium text-sm lg:text-base transition duration-300 relative group animate-stagger-4">
+          Lokasi
+          <span class="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-[#E65100] group-hover:w-full transition-all duration-300"></span>
+        </a>
+
+        <a href="#footer" class="nav-link text-gray-600 hover:text-[#E65100] font-medium text-sm lg:text-base transition duration-300 relative group animate-stagger-5">
           Kontak
-          <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-[#E65100] group-hover:w-full transition-all duration-300"></span>
+          <span class="nav-underline absolute bottom-0 left-0 w-0 h-0.5 bg-[#E65100] group-hover:w-full transition-all duration-300"></span>
         </a>
       </div>
 
-      <!-- Mobile Menu Icon & CTA -->
       <div class="flex items-center space-x-2 sm:space-x-3 md:space-x-5 animate-fade-in-right">
         <button class="text-gray-500 hover:text-[#E65100] transition hover:rotate-12 hover:scale-110 p-2 sm:p-2.5 md:p-3">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8 md:h-9 md:w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -48,14 +49,12 @@
           </svg>
         </button>
 
-        <!-- Mobile Menu Toggle -->
         <button class="md:hidden text-gray-500 hover:text-[#E65100] transition p-2 sm:p-2.5" id="mobile-menu-btn">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 sm:h-8 sm:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
 
-        <!-- CTA Button -->
         <a href="https://wa.me/62812345678" class="bg-[#E65100] hover:bg-[#cc4600] text-white px-4 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-3.5 rounded text-sm sm:text-base md:text-lg font-semibold shadow-md hover:shadow-lg hover:scale-105 transition duration-300 uppercase tracking-wide animate-glow whitespace-nowrap">
           Hubungi
         </a>
@@ -63,28 +62,105 @@
 
     </div>
 
-    <!-- Mobile Menu (Hidden by default) -->
     <div class="hidden md:hidden pb-4 border-t border-gray-100" id="mobile-menu">
-      <a href="#hero" class="block px-3 py-2 text-gray-600 hover:text-[#E65100] hover:bg-orange-50 rounded transition duration-300">Beranda</a>
-      <a href="#product" class="block px-3 py-2 text-gray-600 hover:text-[#E65100] hover:bg-orange-50 rounded transition duration-300">Produk</a>
-      <a href="#location" class="block px-3 py-2 text-gray-600 hover:text-[#E65100] hover:bg-orange-50 rounded transition duration-300">Lokasi</a>
-      <a href="#partner" class="block px-3 py-2 text-gray-600 hover:text-[#E65100] hover:bg-orange-50 rounded transition duration-300">Partner</a>
-      <a href="#footer" class="block px-3 py-2 text-gray-600 hover:text-[#E65100] hover:bg-orange-50 rounded transition duration-300">Kontak</a>
+      <a href="#hero" class="mobile-link block px-3 py-2 text-gray-600 hover:text-[#E65100] hover:bg-orange-50 rounded transition duration-300">Beranda</a>
+      <a href="#product" class="mobile-link block px-3 py-2 text-gray-600 hover:text-[#E65100] hover:bg-orange-50 rounded transition duration-300">Produk</a>
+      <a href="#partner" class="mobile-link block px-3 py-2 text-gray-600 hover:text-[#E65100] hover:bg-orange-50 rounded transition duration-300">Partner</a>
+      <a href="#location" class="mobile-link block px-3 py-2 text-gray-600 hover:text-[#E65100] hover:bg-orange-50 rounded transition duration-300">Lokasi</a>
+      <a href="#footer" class="mobile-link block px-3 py-2 text-gray-600 hover:text-[#E65100] hover:bg-orange-50 rounded transition duration-300">Kontak</a>
     </div>
   </div>
 </nav>
 
 <script>
+  // --- 1. Logic Mobile Menu ---
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
   mobileMenuBtn?.addEventListener('click', () => {
     mobileMenu?.classList.toggle('hidden');
   });
-  // Close menu when clicking a link
+
   document.querySelectorAll('#mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenu?.classList.add('hidden');
     });
+  });
+
+  // --- 2. Logic Active State Scroll ---
+  const navLinks = document.querySelectorAll('.nav-link');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+
+  const removeActiveClasses = () => {
+    navLinks.forEach(link => {
+      link.classList.remove('text-[#E65100]');
+      link.classList.add('text-gray-600');
+      const span = link.querySelector('span');
+      if(span) {
+        span.classList.remove('w-full');
+        span.classList.add('w-0');
+      }
+    });
+    mobileLinks.forEach(link => {
+        link.classList.remove('text-[#E65100]', 'bg-orange-50', 'font-bold');
+        link.classList.add('text-gray-600');
+    });
+  };
+
+  const addActiveClasses = (id) => {
+    // Desktop
+    const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+    if (activeLink) {
+      activeLink.classList.remove('text-gray-600');
+      activeLink.classList.add('text-[#E65100]');
+      const span = activeLink.querySelector('span');
+      if(span) {
+        span.classList.remove('w-0');
+        span.classList.add('w-full');
+      }
+    }
+    // Mobile
+    const activeMobileLink = document.querySelector(`.mobile-link[href="#${id}"]`);
+    if (activeMobileLink) {
+        activeMobileLink.classList.remove('text-gray-600');
+        activeMobileLink.classList.add('text-[#E65100]', 'bg-orange-50', 'font-bold');
+    }
+  };
+
+  // --- Setup Observer (Untuk section tengah) ---
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.3
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    // Kita cek apakah user sudah di paling bawah halaman
+    const isAtBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight - 50; // toleransi 50px
+
+    if (!isAtBottom) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          removeActiveClasses();
+          addActiveClasses(entry.target.id);
+        }
+      });
+    }
+  }, observerOptions);
+
+  document.querySelectorAll('section[id]').forEach((section) => {
+    observer.observe(section);
+  });
+
+  // --- Setup Event Listener Scroll (Khusus untuk mendeteksi paling bawah/footer) ---
+  window.addEventListener('scroll', () => {
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const bodyHeight = document.body.offsetHeight;
+
+      // Jika sudah sampai bawah (dengan toleransi 10px)
+      if (scrollPosition >= bodyHeight - 10) {
+          removeActiveClasses();
+          addActiveClasses('footer'); // Paksa aktifkan footer/kontak
+      }
   });
 </script>
