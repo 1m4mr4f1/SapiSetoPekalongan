@@ -74,70 +74,13 @@
   </div>
 </nav>
 
-<script is:inline>
+<script>
   const mobileMenuBtn = document.getElementById('mobile-menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
-  const navLinks = document.querySelectorAll('nav a[href^="#"]');
-
-  function setActiveLink() {
-    const scrollPosition = window.scrollY;
-
-    navLinks.forEach(link => {
-      const targetId = link.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-
-      if (targetElement) {
-        const elementTop = targetElement.offsetTop - 100; // Offset consideration
-        const elementBottom = elementTop + targetElement.offsetHeight;
-
-        if (scrollPosition >= elementTop && scrollPosition < elementBottom) {
-          navLinks.forEach(navLink => navLink.classList.remove('active'));
-          link.classList.add('active');
-        }
-      }
-    });
-  }
-
-  // Add active class initially based on the first section in view
-  setActiveLink();
-
-  window.addEventListener('scroll', setActiveLink);
 
   mobileMenuBtn?.addEventListener('click', () => {
     mobileMenu?.classList.toggle('hidden');
-=======
-```
-
-```
-<<<<<<< SEARCH line=92
-  // Close menu when clicking a link
-  document.querySelectorAll('#mobile-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu?.classList.add('hidden');
-    });
   });
-</script>
-=======
-  // Close menu when clicking a link
-  document.querySelectorAll('#mobile-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu?.classList.add('hidden');
-    });
-  });
-
-  navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-      mobileMenu?.classList.add('hidden');
-    });
-  });
-</script>
-<style>
-  nav a.active {
-    color: #E65100;
-  }
-</style>
-  });
-
   // Close menu when clicking a link
   document.querySelectorAll('#mobile-menu a').forEach(link => {
     link.addEventListener('click', () => {
